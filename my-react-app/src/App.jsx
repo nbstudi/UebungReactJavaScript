@@ -1,3 +1,5 @@
+/* //ich lasse mal das Beispiel hier drinnen für inspo
+  //App.css lasse ich auch drin
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -30,6 +32,26 @@ function App() {
       </p>
     </>
   )
+}
+
+export default App
+*/
+
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
+import Food from './Food.jsx'
+
+
+function App() {
+
+  return(
+    <>
+    <Header/>
+    <Food/>
+    <Footer/>
+    </>
+  );
+
 }
 
 export default App

@@ -1,3 +1,4 @@
+/*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -65,4 +66,34 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+*/
+
+.card{
+  border: 1px solid hsl(0,0%, 80%); /*hue, saturation, light*/
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px /*horizontal, vertikal, blur radius*/ hsla(0, 0%, 0%, 0.1); /*last one (a = alpha) is for transparency 0,1 = 10%*/
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block; /*e.g. the cards will flow within the container if you have more cards*/
+}
+
+.card .card-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title{
+  font-family: Arial, sans-serif; /*if the first font cannot be displayed, the next one will as an alternative*/
+  margin: 0;
+  color: hsl(0, 0%, 20%);
+}
+
+.card .card-text{
+  font-family: Arial, sans-serif;
+  color: hsl(0, 0%, 30%)
 }
